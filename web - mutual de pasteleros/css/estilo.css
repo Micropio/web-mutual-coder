@@ -1,0 +1,757 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  color: #f19a2d;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 2rem;
+  font-size: 28px;
+}
+
+.h2link, h2 {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  text-align: justify;
+}
+
+p {
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+
+.h1blanco {
+  color: #ffffff;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+  font-size: 28px;
+}
+
+.p_blanco {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 2rem;
+  font-size: 18px;
+}
+
+.imgespecial {
+  max-width: 600px;
+  width: auto;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.todo {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(5, auto) ;
+  grid-template-areas: 
+  "header"
+  "afiliacion"
+  "sucursales"
+  "noticias"
+  "footer";
+  row-gap: 90px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+header {
+  grid-area: header;
+}
+section#afiliacion {
+  grid-area: afiliacion;
+}
+section#sucursales {
+  grid-area: sucursales;
+}
+section#noticias { 
+  grid-area: noticias;
+}
+footer {
+  grid-area: footer;
+}
+
+
+header {
+  background-color: #f19a2d;
+  height: 120px;
+  box-shadow: 2px 0 10px rgb(0 0 0 / 30%);
+  padding: 1rem;
+  position: relative;
+}
+.header__box {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.encabezadologo {
+  height: 60px;
+  width: auto;
+}
+
+.menu_lista, .menu_listaparalelo {
+  display: flex;
+  text-align: center;
+}
+
+.menu_item {
+  margin-left: 1rem;
+  list-style: none;
+}
+.menu_boton {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.nav__item--orden {
+  order: 0;
+}
+.nav__enlace--activo {
+  background-color: #ffffff;
+  color: #f19a2d;
+  border-radius: 5px;
+}
+
+
+.todo__box {
+  max-width: 1200px;
+  margin: 0 auto;
+  max-height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.todo__boxcolor {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  max-height: 600px;
+  background-color: #f19a2d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 2px 0 6px rgb(0, 0, 0, .6);
+}
+
+.box__izq, .box__der {
+  width: 50%;
+}
+
+.box__izq {
+  margin-left: 2rem;
+  align-items: center;
+}
+
+.box__der {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box__img {
+  max-width: 600px;
+  max-height: 600px;
+  padding: 1rem;
+  height: auto;
+  width: auto;
+  align-items: center; 
+}
+
+.boton {   
+  background-color: #0D623B;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 0 auto;
+  margin-right: 70%;
+  margin-bottom: 8%;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  box-shadow: 1px 0 8px rgb(0, 0, 0, .6);
+}
+
+.iframe {
+  background-color: #f19a2d;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 0px;
+  box-shadow: 2px 0 5px rgb(0, 0, 0, .6);
+  align-items: center;
+}
+
+.todo__boxnoticias {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #f19a2d;
+  padding: 10px;
+  justify-content: space-between;
+  align-content: center;
+  position: relative;
+  box-shadow: 2px 0 5px rgb(0, 0, 0, .6);
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+.imgnot {
+  height: 150px;
+  width: auto;
+  margin: 15px;
+  border: 1px solid white;
+}
+
+.p2 {
+  display: flex;
+  font-family: 'Roboto Slab', serif;
+  justify-content: center;
+  align-content: center;
+  text-align: left;
+  color: #fff;
+  font-size: 15px;
+  margin: 15px;
+}
+
+.lista {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  margin-left: 50px;
+}
+
+.listasucursales {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 200px;
+  width: auto;
+  flex-direction: column;
+  border-top: 7px solid #f19a2d;
+  border-bottom: 7px solid #f19a2d;
+  box-shadow: 5px 0 10px rgb(0, 0, 0, .6);
+}
+
+.listasucursales_items {
+  display: flex;
+  list-style: none;
+  width: auto;
+  height: auto;
+  margin: 5px;
+  padding: 15px;
+  justify-content: center;
+  align-content: center;
+}
+
+.listasucursales_items li a {
+  padding: 17px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  color: #f19a2d;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+}
+
+.formulario {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  color: #fff;
+  margin-left: 2rem;
+
+}
+
+.formulariotitulo {
+  padding-left: 5px;
+  margin-left: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.formulario1 {
+  background-color: #f19a2d;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  color: #fff;
+}
+.formulario2 {
+  padding: 5px;
+  margin-left: 15px;
+  border: 2px solid white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.contacto {
+  padding: 1px;
+  margin-top: 1rem;
+}
+
+.contactocapital {
+  margin-top: 5rem;
+}
+
+.botonenvio {
+  margin-bottom: 100px;
+  margin-top: 5px;
+  margin-left: 25px;
+  padding: 5px;
+  text-align: justify;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #f19a2d;
+  height: 120px;
+  box-shadow: 2px 0 10px rgb(0 0 0 / 30%);
+  padding: 1rem;
+  position: relative;
+}
+.footer__box {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logofooter {
+  height: 60px;
+  width: auto;
+  margin: 1rem;
+}
+
+.footer__text {
+  font-size: 15px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 1rem;
+}
+
+.sociales {
+  position: fixed;
+  right: 0;
+  top: 20%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+  background-color: #ff9933;
+  box-shadow: 1px 0 5px rgb(0, 0, 0, .6);
+  border-top-left-radius: 25px;
+  border-end-start-radius: 25px;
+}
+
+.icon {
+  color: #ffffff;
+  text-decoration: none;
+  padding: .7rem;
+  display: flex;
+}
+
+.btn-open-sidebar {
+  display: none
+}
+
+.menu_itemo--ocultar {
+  display: none;
+}
+
+
+
+@media all and (max-width: 1024px) {
+  .todo {
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "header"
+    "afiliacion"
+    "sucursales"
+    "noticias"
+    "footer";
+    row-gap: 2rem;
+  }
+  
+  header {
+    width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    width: auto;
+    height: auto;
+  }
+  
+  .footer__box {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  
+  .header__box {
+    height: 100%;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .encabezadologo {
+    width: 100%;
+    height: auto;
+  }
+  
+  .menu_item {
+    flex-wrap: wrap;
+  }
+  
+  .boton {
+    max-width: 120px;
+    width: 100%;
+  }
+  
+  #afiliacion #sucursales, #noticias {
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+  }
+  
+  .todo__box {
+    flex-direction: column;
+    justify-items: auto;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+  
+  .todo__boxcolor {
+    flex-direction: column;
+    justify-items: auto;
+    width: 100%;
+    height: auto;
+  }
+  
+  .todo__boxnoticias {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .box__der, .box__izq {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    align-items: center;
+  }
+  
+  .box__izq {
+    margin-right: 5%;
+  }
+  
+  .box__img, .imgespecial {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .todo__boxnoticias {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .iframe {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  
+  
+  .logo {
+    width: 50%;
+    height: auto;
+  }
+  
+  .formulario {
+    max-width: 300px;
+    width: auto;
+    height: 100%;
+    flex-direction: column;
+  }
+  
+  .listasucursales {
+    max-width: 300px;
+    width: auto;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  
+  .listasucursales_items {
+    max-width: 300px;
+    width: auto;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .footer__box {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-open-sidebar {
+    display: inline-block;
+    background-color: #f19a2d;
+    color: #fff;
+    padding: 0,5rem 1rem;
+  }
+  
+  .menu_lista {
+    background-color: #f19a2d;
+    width: 70%;
+    max-width: 400px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    transition: transform 0.5s;
+    z-index: 100;
+  }
+  #sidebar:target {
+    transform: translateX(0%);
+  }
+  
+  .menu_itemo--ocultar {
+    display: block;
+  }
+
+.menu_listaparalelo {
+  flex-direction: column;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+.todo {
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: 
+  "header"
+  "afiliacion"
+  "sucursales"
+  "noticias"
+  "footer";
+  row-gap: 2rem;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  width: auto;
+  height: auto;
+}
+
+.footer__box {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+
+.header__box {
+  height: 100%;
+  width: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.encabezadologo {
+  width: 100%;
+  height: auto;
+}
+
+.menu_item {
+  flex-wrap: wrap;
+}
+
+.boton {
+  max-width: 120px;
+  width: 100%;
+}
+
+#afiliacion #sucursales, #noticias {
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+}
+
+.todo__box {
+  flex-direction: column;
+  justify-items: auto;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+}
+
+.todo__boxcolor {
+  flex-direction: column;
+  justify-items: auto;
+  width: auto;
+  height: auto;
+}
+
+.todo__boxnoticias {
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.box__der, .box__izq {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  align-items: center;
+}
+
+.box__izq {
+  margin-right: 5%;
+}
+
+.box__img, .imgespecial {
+  width: 100%;
+  height: 100%;
+}
+
+.todo__boxnoticias {
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iframe {
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+}
+
+
+.logo {
+  width: auto;
+}
+
+.formulario {
+  max-width: 300px;
+  width: auto;
+  height: 100%;
+  flex-direction: column;
+}
+
+.listasucursales {
+  max-width: 300px;
+  width: auto;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.listasucursales_items {
+  max-width: 300px;
+  width: auto;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer__box {
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-open-sidebar {
+  display: inline-block;
+  background-color: #f19a2d;
+  color: #fff;
+  padding: 0,5rem 1rem;
+}
+
+.menu_lista {
+  background-color: #f19a2d;
+  width: 70%;
+  max-width: 400px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  transition: transform 0.5s;
+  z-index: 100;
+}
+#sidebar:target {
+  transform: translateX(0%);
+}
+
+.menu_itemo--ocultar {
+  display: block;
+}
+
+.menu_listaparalelo {
+  flex-direction: column;
+}
+
+.sociales {
+  position: fixed;
+  flex-direction: row;
+  align-items: center;
+  top: 90%;
+}
+
+
+}
